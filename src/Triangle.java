@@ -45,5 +45,15 @@ public class Triangle extends Shapes{
         return 0;
     }
 
+    @Override
+    public double rad() {
+        return 0;
+    }
+
+    @Override
+    public double calculateRadius() {
+        return 0;
+    }
+
 
 }

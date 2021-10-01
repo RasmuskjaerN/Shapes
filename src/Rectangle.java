@@ -61,7 +61,15 @@ public class Rectangle extends Shapes{
         return centerRectY;
     }
 
+    @Override
+    public double rad() {
+        return 0;
+    }
 
+    @Override
+    public double calculateRadius() {
+        return 0;
+    }
 
 
 }

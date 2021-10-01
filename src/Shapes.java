@@ -8,6 +8,9 @@ public abstract class Shapes {
     public abstract boolean isInside();
     public abstract double centerX();
     public abstract double centerY();
+    public abstract double rad();
+    public abstract double calculateRadius();
+
 
 
 
