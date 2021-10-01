@@ -7,6 +7,10 @@ public class Rectangle extends Shapes{
         this.y2 = y2;
 
     }
+    public void RectangleRef(double refX, double refY) {
+        this.refX = refX;
+        this.refY = refY;
+    }
 
 
     @Override
@@ -36,7 +40,13 @@ public class Rectangle extends Shapes{
 
     @Override
     public boolean isInside() {
-        return false;
+        if ((refX < x2 || refX <x1)&&(refY < y2 || refY < y1)){
+            System.out.println("Reference point is inside the Rectangle");
+            return true;
+        } else {
+            System.out.println("Reference point is outside the Rectangle");
+            return false;
+        }
     }
 
     @Override
@@ -50,6 +60,8 @@ public class Rectangle extends Shapes{
         double centerRectY=(side2()/2);
         return centerRectY;
     }
+
+
 
 
 }
