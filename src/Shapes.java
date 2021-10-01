@@ -1,43 +1,25 @@
-public class Shapes implements ShapeInterface{
+public abstract class Shapes {
 
-    public String name;
-    public int width, height;
+    public abstract double side1 ();
+    public abstract double side2 ();
+    public abstract double side3 ();
+    public abstract double area();
+    public abstract double circumference();
+    public abstract boolean isInside();
+    public abstract double centerX();
+    public abstract double centerY();
 
-    public Shapes(String name, int width, int height) {
-        this.name = name;
-        this.width = width;
-        this.height = height;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
+    public double x1;
+    public double y1;
+    public double x2;
+    public double y2;
+    public double x3;
+    public double y3;
 
 
 
 
-    @Override
-    public int calculateArea() {
-        return 0;
-    }
+
+
 }
