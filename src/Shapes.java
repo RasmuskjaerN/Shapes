@@ -8,6 +8,11 @@ public abstract class Shapes {
     public abstract boolean isInside();
     public abstract double centerX();
     public abstract double centerY();
+    public abstract double rad();
+    public abstract double calculateRadius();
+
+
+
 
 
     public double x1;
@@ -17,6 +22,10 @@ public abstract class Shapes {
     public double x3;
     public double y3;
 
+
+
+    public double refX;
+    public double refY;
 
 
 

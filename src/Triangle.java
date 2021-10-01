@@ -67,4 +67,16 @@ public class Triangle extends Shapes{
     public double centerY() {
         return (y3+y2+y1)/3;
     }
+
+    @Override
+    public double rad() {
+        return 0;
+    }
+
+    @Override
+    public double calculateRadius() {
+        return 0;
+    }
+
+
 }
