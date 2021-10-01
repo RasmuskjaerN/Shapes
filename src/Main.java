@@ -20,11 +20,13 @@ public class Main {
         circ.isInside();
 
         Triangle tria = new Triangle(11,11,22,22,33,33);
+        System.out.println("\n Triangle: ");
         System.out.println("the area of the triangle is "+tria.area());
         System.out.println("circumference "+tria.circumference());
         System.out.println("Side 1 of the triangle is "+tria.side1());
         System.out.println("Side 2 of the triangle is "+tria.side2());
         System.out.println("Side 3 of the triangle is "+tria.side3());
+
         }
         //branch test
 
