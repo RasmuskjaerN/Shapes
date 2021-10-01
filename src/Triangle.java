@@ -8,8 +8,8 @@ public class Triangle extends Shapes{
         this.x2 =x2;
         this.y2 =y2;
         //third point
-        this.x3 =x3;
-        this.y3 =y3;
+        this.x3 =x2;
+        this.y3 =y1;
 
     }
 
