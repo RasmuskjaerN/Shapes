@@ -5,7 +5,7 @@ public class Main {
         Rectangle rect = new Rectangle(1,1,3,3);
         System.out.println("\n Rectangle: ");
         System.out.println("Rectangle Area is " + rect.area());
-        System.out.println("Rectangle Circumfrence is "+rect.circumference());
+        System.out.println("Rectangle Circumference is "+rect.circumference());
         System.out.println("Rectangle Center is "+rect.centerX() + ", "+ rect.centerY());
         rect.RectangleRef(5,5);
         rect.isInside();
@@ -19,7 +19,7 @@ public class Main {
         circ.CircleRef(10,10);
         circ.isInside();
 
-        Triangle tria = new Triangle(11,11,22,22,33,33);
+        Triangle tria = new Triangle(11,11,22,22);
         System.out.println("\n Triangle: ");
         System.out.println("the area of the triangle is "+tria.area());
         System.out.println("circumference "+tria.circumference());

@@ -1,15 +1,15 @@
 public class Triangle extends Shapes{
 
-    public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
+    public Triangle(double x1, double y1, double x2, double y2) {
         //first point
         this.x1 =x1;
         this.y1 =y1;
         //second point
         this.x2 =x2;
         this.y2 =y2;
-        //third point
-        this.x3 =x2;
-        this.y3 =y1;
+
+
+
 
     }
 
@@ -23,22 +23,22 @@ public class Triangle extends Shapes{
 
     @Override
     public double side2() {
-        double xSide2 = Math.pow(((x3)-(x2)),2);
-        double ySide2 = Math.pow(((y3)-(y2)),2);
+        double xSide2 = Math.pow(((x2)-(x2)),2);
+        double ySide2 = Math.pow(((y1)-(y2)),2);
 
         return Math.sqrt((xSide2+ySide2));
     }
 
     @Override
     public double side3() {
-        double xSide3 = Math.pow(((x1)-(x3)),2);
-        double ySide3 = Math.pow(((y1)-(y3)),2);
+        double xSide3 = Math.pow(((x1)-(x2)),2);
+        double ySide3 = Math.pow(((y1)-(y1)),2);
         return Math.sqrt((xSide3+ySide3));
     }
 
     @Override
     public double area() {
-        return Math.abs((x1*(y2-y3) + x2*(y3-y1)+x3*(y1-y2))/2.0);
+        return Math.abs((x1*(y2-y1) + x2*(y1-y1)+x2*(y1-y2))/2.0);
     }
 
     @Override
@@ -49,9 +49,9 @@ public class Triangle extends Shapes{
     @Override
     public boolean isInside() {
 
-        double d = ((y2 - y3)*(x1 - x3) + (x3 - x2)*(y1 - y3));
-        double a = ((y2 - y3)*(x1 - x3) + (x3 - x2)*(y1 - y3)) / d;
-        double b = ((y3 - y1)*(x1 - x3) + (x1 - x3)*(y1 - y3)) / d;
+        double d = ((y2 - y1)*(x1 - x2) + (x2 - x2)*(y1 - y1));
+        double a = ((y2 - y1)*(x1 - x2) + (x2 - x2)*(y1 - y1)) / d;
+        double b = ((y1 - y1)*(x1 - x2) + (x1 - x2)*(y1 - y1)) / d;
         double c = 1 - a - b;
 
         return 0 <= a && a <= 1 && 0 <= b && b <= 1 && 0 <= c && c <= 1;
@@ -60,12 +60,12 @@ public class Triangle extends Shapes{
 
     @Override
     public double centerX() {
-        return (x3 + x2 + x1)/3;
+        return (x2 + x2 + x1)/3;
     }
 
     @Override
     public double centerY() {
-        return (y3+y2+y1)/3;
+        return (y1+y2+y1)/3;
     }
 
     @Override

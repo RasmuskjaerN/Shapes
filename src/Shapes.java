@@ -19,13 +19,13 @@ public abstract class Shapes {
     public double y1;
     public double x2;
     public double y2;
-    public double x3;
-    public double y3;
+
 
 
 
     public double refX;
     public double refY;
+
 
 
 
